@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Currency Converter</h1>
+        <h2>Select input currency</h2>
+        <input type="radio" value="USD" checked> USD
+        <input type="radio" value="EUR"> EUR
+        <input type="number" id="value">
+        <button id="convertButton" onclick="handleClick()">Convert Currency</button>
+    </div>
+    <script>
+        function handleClick() {
+            let inputValue = parseFloat(document.getElementById("value").value)
+            console.log(inputValue)
+        }
+    </script>
+</body>
+</html>
